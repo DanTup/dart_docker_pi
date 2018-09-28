@@ -1,4 +1,4 @@
-# DanTup / dart_docker_pi
+# DanTup / dart_pi
 
 Extends multiarch/debian-debootstrap:armhf-stretch-slim with the Dart SDK.
 

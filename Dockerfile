@@ -13,5 +13,5 @@ RUN mkdir /tmp/dart && \
 
 FROM multiarch/debian-debootstrap:armhf-stretch-slim
 
-WORKDIR /dart/
-COPY --from=0 /tmp/dart/dart-sdk ./dart-sdk/
+COPY --from=0 /tmp/dart/dart-sdk /dart/dart-sdk/
+ENV PATH="/dart/dart-sdk/bin:${PATH}"
